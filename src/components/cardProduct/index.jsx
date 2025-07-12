@@ -4,7 +4,9 @@ import './index.css'
 
 const Card = forwardRef(({ product }, ref) => {
     return (
-        <Link to={`/detail-product/${product.id}`} className="product-card">
+        <Link className="product-card"
+            to={`/detail-product/${product.id}`}
+            state={{ product }}>
             <figure ref={ref}>
                 <img src={product.image} alt={product.title} className="product-image" />
                 <h3 className="product-title">{product.title}</h3>

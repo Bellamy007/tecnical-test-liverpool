@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { API_KEY } from '../../config';
 import './index.css';
 
 
 function DetailProduct() {
     const { id } = useParams();
+    const location = useLocation();
+    const productPrice = location.state?.product.price;
+
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -33,12 +37,14 @@ function DetailProduct() {
         <section className="product-detail">
             <div className="product-detail-image-wrapper">
                 <img src={product.image} alt={product.title} className="product-detail-image" />
-                <p className="product-detail-price">${product.price?.toFixed(2) || '—'}</p>
+                <p className="product-detail-price">${productPrice?.toFixed(2) || '—'}</p>
             </div>
 
             <div className="product-detail-info">
                 <h1 className="product-detail-title">{product.title}</h1>
-                <p className="product-detail-description">{product.summary || 'Descripción no disponible.'}</p>
+                <p className="product-detail-description"
+                    dangerouslySetInnerHTML={{ __html: product.summary || 'Descripción no disponible.' }}>
+                </p>
             </div>
         </section>
     );
