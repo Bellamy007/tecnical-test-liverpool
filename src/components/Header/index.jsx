@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     const { setInputValue } = useContext(SearchContext);
+    const handleLogin = (e) => {
+        e.preventDefault();
+        alert('Atrapada! el login no lo hice ☠️');
+    }
     return (
         <header className="header">
             <Link to={'/'}>
@@ -21,7 +25,7 @@ function Header() {
             </div>
 
             <nav className="nav-links">
-                <a href="/" className="nav-link">Login</a>
+                <a href="/" onClick={handleLogin} className="nav-link">Login</a>
                 <a href="/contact" className="nav-link button-link">Contacto</a>
             </nav>
         </header>
