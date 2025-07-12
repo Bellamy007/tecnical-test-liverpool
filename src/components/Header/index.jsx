@@ -26,7 +26,7 @@ function Header() {
 
             <nav className="nav-links">
                 <a href="/" onClick={handleLogin} className="nav-link">Login</a>
-                <a href="/contact" className="nav-link button-link">Contacto</a>
+                <Link to={'/contact'} className="nav-link button-link">Contacto</Link>
             </nav>
         </header>
     );
