@@ -24,3 +24,8 @@ Clona el repositorio y ejecuta la instalación de dependencias:
 git clone https://github.com/Bellamy007/technical-test-liverpool.git
 cd technical-test-liverpool
 npm install
+
+```
+## .env
+
+VITE_API_KEY=tu_api_key_aqui
