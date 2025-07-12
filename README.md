@@ -1,12 +1,26 @@
-# React + Vite
+# 🛍️ Technical Test – Liverpool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Build Status](https://github.com/tuusuario/technical-test-liverpool/actions/workflows/main.yml/badge.svg)](https://github.com/tuusuario/technical-test-liverpool/actions)
+[![Vercel Deployment](https://vercelbadge.vercel.app/api/tuusuario/technical-test-liverpool)](https://technical-test-liverpool.vercel.app/)
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación React desarrollada con [Vite](https://vitejs.dev/), que implementa navegación con React Router y lógica de búsqueda, carga infinita y detalle de productos usando la API de Spoonacular.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Requisitos previos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Asegúrate de tener instalado lo siguiente:
+
+- **Node.js** (v18 o superior)
+- **npm** o **yarn**
+
+---
+
+## ⚙️ Instalación
+
+Clona el repositorio y ejecuta la instalación de dependencias:
+
+```bash
+git clone https://github.com/Bellamy007/technical-test-liverpool.git
+cd technical-test-liverpool
+npm install
