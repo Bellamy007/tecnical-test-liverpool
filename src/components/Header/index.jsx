@@ -1,12 +1,15 @@
 import { useContext } from 'react';
 import { SearchContext } from '../../context';
 import "./index.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
     const { setInputValue } = useContext(SearchContext);
     return (
         <header className="header">
+            <Link to={'/'}>
             <div className="logo">Jairo's</div>
+            </Link>
 
             <div className="search-container">
                 <input
