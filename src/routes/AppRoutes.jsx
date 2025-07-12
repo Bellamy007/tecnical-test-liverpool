@@ -1,8 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-// import About from "../pages/About/About";
-// import Login from "../pages/Login/Login";
 import Layout from "../components/Layout";
 import { Home } from "../pages/Home";
+import { Contact } from "../pages/Contact";
 import { DetailProduct } from "../pages/DetailProduct";
 
 export default function AppRoutes() {
@@ -12,7 +11,7 @@ export default function AppRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/detail-product/:id" element={<DetailProduct />} />
             </Route>
-            <Route path="/login" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     );
 }

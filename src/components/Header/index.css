@@ -17,6 +17,7 @@
 .search-container {
     flex: 1;
     padding: 0 32px;
+    text-align: center;
 }
 
 .search-input {
@@ -55,4 +56,5 @@
 
 .button-link:hover {
     background-color: #005fcc;
+    color: white;
 }

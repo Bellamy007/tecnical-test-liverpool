@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback, useContext } from "react";
+import { useEffect, useState, useRef, useCallback, useContext, useMemo } from "react";
 import { SearchContext } from "../../context";
 import { Card } from "../cardProduct";
 import { CardLoader } from "../loaders/cardLoader/cardLoader";
@@ -63,7 +63,8 @@ function InfiniteProducts() {
         },
         [loading, hasMore]
     );
-    const skeletonLoadingCards = new Array(10).fill().map((_, index) => <CardLoader key={index} />)
+    const skeletonLoadingCards = useMemo(
+        () => new Array(10).fill().map((_, index) => <CardLoader key={index} />), []);
     return (
         <div className="products-list">
             {products.map((product, i) => (
