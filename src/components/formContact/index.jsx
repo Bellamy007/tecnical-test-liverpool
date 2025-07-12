@@ -17,7 +17,7 @@ function FormContact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Enviado 🟢", formData);
+        alert(`Form enviado 🟢 ${JSON.stringify(formData)}`);
     };
 
     return (
