@@ -1,9 +1,9 @@
 # 🛍️ Technical Test – Liverpool
 
-[![Build Status](https://github.com/tuusuario/technical-test-liverpool/actions/workflows/main.yml/badge.svg)](https://github.com/tuusuario/technical-test-liverpool/actions)
-[![Vercel Deployment](https://vercelbadge.vercel.app/api/tuusuario/technical-test-liverpool)](https://technical-test-liverpool.vercel.app/)
+[![Build Status](https://github.com/Bellamy007/technical-test-liverpool/actions/workflows/main.yml/badge.svg)](https://github.com/Bellamy007/technical-test-liverpool/actions)
+[![Vercel Deployment](https://vercelbadge.vercel.app/api/Bellamy007/technical-test-liverpool)](https://technical-test-liverpool.vercel.app/)
 
-Este proyecto es una aplicación React desarrollada con [Vite](https://vitejs.dev/), que implementa navegación con React Router y lógica de búsqueda, carga infinita y detalle de productos usando la API de Spoonacular.
+Este proyecto es una aplicación React desarrollada con [Vite](https://vitejs.dev/), que implementa navegación con React Router, búsqueda dinámica, carga infinita y vista detallada de productos utilizando la API de [Spoonacular](https://spoonacular.com/food-api).
 
 ---
 
