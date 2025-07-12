@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { API_KEY } from '../../config';
+import { DetailProductLoader } from '../../components/loaders/detailProductLoader/detailProductLoader';
 import './index.css';
 
 
@@ -30,7 +31,7 @@ function DetailProduct() {
         fetchProductDetail();
     }, [id]);
 
-    if (loading) return <p>Cargando producto...</p>;
+    if (loading) return <DetailProductLoader />;
     if (!product) return <p>No se encontró el producto.</p>;
 
     return (

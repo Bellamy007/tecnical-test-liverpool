@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef, useCallback, useContext } from "react";
 import { SearchContext } from "../../context";
 import { Card } from "../cardProduct";
-import { CardLoader } from "../loaders/cardLoader";
+import { CardLoader } from "../loaders/cardLoader/cardLoader";
 import { API_KEY } from '../../config'
 import './index.css'
 
@@ -63,7 +63,7 @@ function InfiniteProducts() {
         },
         [loading, hasMore]
     );
-    const skeletonLoandingCards = new Array(10).fill().map((_, index) => <CardLoader key={index} />)
+    const skeletonLoadingCards = new Array(10).fill().map((_, index) => <CardLoader key={index} />)
     return (
         <div className="products-list">
             {products.map((product, i) => (
@@ -73,7 +73,7 @@ function InfiniteProducts() {
                     ref={i === products.length - 1 ? lastProductRef : null}
                 />
             ))}
-            {loading ? skeletonLoandingCards : (!products.length && <p>No se encontraron coincidencias</p>)}
+            {loading ? skeletonLoadingCards : (!products.length && <p>No se encontraron coincidencias</p>)}
         </div>
     );
 }
